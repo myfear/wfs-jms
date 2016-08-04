@@ -4,6 +4,7 @@
 .mtj.tmp/
 
 .DS_Store
+target
 
 # Package Files #
 *.jar

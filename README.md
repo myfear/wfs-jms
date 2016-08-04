@@ -69,7 +69,7 @@ You can run it:
 * mvn wildfly-swarm:run
 * In your IDE run the `org.wildfly.swarm.examples.messaging.mdb.Main` class
 
-## Use
+## Use via Browser
 
     http://localhost:8080/
 
@@ -78,3 +78,7 @@ The MDB will log the received message to the console:
 ``` sh
 2016-08-03 08:23:16,922 INFO  [sample.SampleTopicMDB] (Thread-117 (ActiveMQ-client-global-threads-1211290936)) received: Test Message
 ```
+
+## Remote JMS
+
+run sample.client.HelloWorldJMSClient
