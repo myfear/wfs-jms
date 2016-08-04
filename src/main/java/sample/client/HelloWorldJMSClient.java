@@ -25,7 +25,7 @@ public class HelloWorldJMSClient {
  
     // Set up all the default value
     private static final String DEFAULT_CONNECTION_FACTORY = "jms/RemoteConnectionFactory";
-    private static final String DEFAULT_DESTINATION = "java:/jms/topic/sample-topic";
+    private static final String DEFAULT_DESTINATION = "jms/topic/sample-topic";
     
     private static final String INITIAL_CONTEXT_FACTORY = "org.jboss.naming.remote.client.InitialContextFactory";
     private static final String PROVIDER_URL = "http-remoting://localhost:8080";
@@ -64,7 +64,7 @@ public class HelloWorldJMSClient {
             log.log(Level.INFO, "Found destination \"{0}\" in JNDI", destinationString);
  
             // Create the JMS connection, session, producer
-            connection = connectionFactory.createConnection();
+            connection = connectionFactory.createConnection("admin", "password");
             session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
             producer = session.createProducer(destination);
            
