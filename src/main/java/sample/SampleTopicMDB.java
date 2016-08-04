@@ -10,6 +10,7 @@ import javax.jms.MessageListener;
 import javax.jms.TextMessage;
 
 /**
+ * Message driven bean to log the message received via sample-topic
  * @author Markus Eisele
  */
 @MessageDriven(name = "SampleTopicMDB", activationConfig = {

@@ -10,6 +10,8 @@ import org.wildfly.swarm.messaging.MessagingFraction;
 import org.wildfly.swarm.naming.NamingFraction;
 
 /**
+ * Starting WildFly Swarm with the remote messaging fraction,
+ * configuring a topic and a queue, adding security.
  * @author Markus Eisele
  */
 public class Main {

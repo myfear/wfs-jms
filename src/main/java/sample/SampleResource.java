@@ -10,7 +10,8 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 
 /**
- * @author Yoshimasa Tanabe
+ * JAX-RS to send a message to the sample-queue.
+ * @author Markus Eisele
  */
 @ApplicationScoped
 @Path("/")
