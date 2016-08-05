@@ -11,6 +11,7 @@ import javax.ws.rs.Produces;
 
 /**
  * JAX-RS to send a message to the sample-queue.
+ *
  * @author Markus Eisele
  */
 @ApplicationScoped
@@ -18,6 +19,7 @@ import javax.ws.rs.Produces;
 public class SampleResource {
 
     public static final String MY_TOPIC = "/jms/topic/sample-topic";
+    public static final String MY_QUEUE = "/jms/queue/sample-queue";
 
     private static final String TEST_MESSAGE = "Test Message";
 
