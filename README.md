@@ -9,7 +9,7 @@ Topic with name "sample-topic"
 
 The `SampleTopicMDB`consumes from the topic.
 
-## Project `pomx.xml`
+## Project `pom.xml`
 
 The project is a normal maven project with `jar` packaging, not `war`.
 
